@@ -1,13 +1,20 @@
 const humanCatDogYears = (number) => {
-
-}
-
+    if (number === 1) {
+        const humanYears = number;
+        const catYears = 15
+        const dogYears = 15;
+        return [humanYears, catYears, dogYears];
+    }
+    if (number === 2){
+        const humanYears = number;
+        const catYears = 15 + 9;
+        const dogYears = 15 + 15;
+        return [humanYears, catYears, dogYears];
+    }
+    if (number > 2){
+        const humanYears = number;
+        const catYears = 15 + 9 + (4 * (number - 2));
+        const dogYears = 15 + 9 + ( 5 * (number - 2));
+        return [humanYears, catYears, dogYears];
+}}
 module.exports = humanCatDogYears;
-
-
-/*
-15 cat years for first human year
-
-+9 cat years for second human year
-
-+4 cat years for each human year after that*/
